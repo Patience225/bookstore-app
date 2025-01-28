@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bookstore App - Cart</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h1>Your Shopping Cart</h1>
+      <p>Review the books you've selected for purchase:</p>
+
+      <div class="cart-list">
+        <div class="cart-item">
+          <img src="https://via.placeholder.com/150x220" alt="Book Cover">
+          <div class="book-details">
+            <h2>The Psychology of Money</h2>
+            <p>by Morgan Housel</p>
+            <p class="cart-price">$15.99</p>
+            <div class="quantity-controls">
+              <button class="decrease-btn">-</button>
+              <input type="number" value="1" class="quantity-input" min="1">
+              <button class="increase-btn">+</button>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="cart-item">
+          <img src="https://via.placeholder.com/150x220" alt="Book Cover">
+          <div class="book-details">
+            <h2>Think and Grow Rich</h2>
+            <p>by Napoleon Hill</p>
+            <p class="cart-price">$12.99</p>
+            <div class="quantity-controls">
+              <button class="decrease-btn">-</button>
+              <input type="number" value="2" class="quantity-input" min="1">
+              <button class="increase-btn">+</button>
+            </div>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <h2>Total: $43.97</h2>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bookstore App. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
