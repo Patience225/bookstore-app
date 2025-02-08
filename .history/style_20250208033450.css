@@ -23,14 +23,7 @@ body {
   --transition: all 0.3s ease;
 }
 
-img, video {
-  max-width: 100%;
-  height: auto;
-}
 
-html, body {
-  overflow-x: hidden;
-}
 
 /* Container */
 .container {
@@ -265,11 +258,6 @@ header.header {
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: var(--secondary-color);
-}
-
-.swiper-slide {
-  overflow: hidden;
-  width: 100%;
 }
 
 /* Newsletter Section */
@@ -528,11 +516,5 @@ header.header {
   
   .book-grid {
     grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (max-width: 400px) {
-  .nav-menu {
-    width: 90%;  
   }
 }

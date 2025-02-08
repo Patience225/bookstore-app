@@ -533,6 +533,6 @@ header.header {
 
 @media (max-width: 400px) {
   .nav-menu {
-    width: 90%;  
+    width: 90%;  /* use a percentage to avoid overflow */
   }
 }

@@ -531,8 +531,3 @@ header.header {
   }
 }
 
-@media (max-width: 400px) {
-  .nav-menu {
-    width: 90%;  
-  }
-}

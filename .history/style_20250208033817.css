@@ -28,9 +28,7 @@ img, video {
   height: auto;
 }
 
-html, body {
-  overflow-x: hidden;
-}
+
 
 /* Container */
 .container {
@@ -528,11 +526,5 @@ header.header {
   
   .book-grid {
     grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (max-width: 400px) {
-  .nav-menu {
-    width: 90%;  
   }
 }
