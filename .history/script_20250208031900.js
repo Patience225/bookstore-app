@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
       { title: "Clean Architecture", author: "Robert C. Martin", image: "images/clean-architecture.jpg" },
       { title: "The Clean Coder", author: "Robert C. Martin", image: "images/clean-coder.jpg" },
       { title: "Working Effectively with Legacy Code", author: "Michael Feathers", image: "images/Working-Effectively-with-Legacy-Code.jpg" },
-      { title: "Refactoring", author: "Martin Fowler", image: "images/Refactoring.jpg" },
+      { title: "Refactoring", author: "Martin Fowler", image: "images/re" },
       { title: "Domain-Driven Design", author: "Eric Evans", image: "images/domain-driven.jpg" }
     ],
     "computer-science": [
