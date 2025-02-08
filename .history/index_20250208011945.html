@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechBookStore</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS for slider functionality -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#home" class="nav-logo">TechBookStore</a>
+        <!-- Search Form -->
+        <form class="search-form" action="#" method="get">
+          <input type="text" placeholder="Search for books..." name="search" required />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+          <li class="nav-item"><a href="#category" class="nav-link">Category</a></li>
+          <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#feedback" class="nav-link">Feedback</a></li>
+          <li class="nav-item"><a href="#cart" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home">
+      <div class="container">
+        <h1>Welcome to TechBookStore</h1>
+        <p>Your ultimate destination for software engineering, computer science, and tech literature.</p>
+        <!-- Newsletter Signup -->
+        <div class="newsletter-signup">
+          <h3>Sign up for our Newsletter</h3>
+          <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container service-grid">
+        <div class="service-item">
+          <img src="images/free-shipping.png" alt="Free Shipping" />
+          <h4>Free Shipping</h4>
+          <p>Order over $100</p>
+        </div>
+        <div class="service-item">
+          <img src="images/secure-payment.png" alt="Secure Payment" />
+          <h4>Secure Payment</h4>
+          <p>100% secure payment</p>
+        </div>
+        <div class="service-item">
+          <img src="images/easy-returns.png" alt="Easy Returns" />
+          <h4>Easy Returns</h4>
+          <p>10 days returns</p>
+        </div>
+        <div class="service-item">
+          <img src="images/support.png" alt="24/7 Support" />
+          <h4>24/7 Support</h4>
+          <p>Call us anytime</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section with Swiper Slider -->
+    <section id="featured" class="section featured">
+      <div class="container">
+        <h2>Featured Books</h2>
+        <!-- Swiper Container -->
+        <div class="swiper-container featured-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <article class="book-item">
+                <img src="images/clean-code.jpg" alt="Clean Code" />
+                <h3>Clean Code</h3>
+                <p>by Robert C. Martin</p>
+                <p class="book-intro">A handbook of agile software craftsmanship emphasizing the importance of writing clean, maintainable code.</p>
+                <button class="add-to-cart">Add to Cart</button>
+              </article>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <article class="book-item">
+                <img src="images/design-patterns.jpg" alt="Design Patterns" />
+                <h3>Design Patterns</h3>
+                <p>by Erich Gamma et al.</p>
+                <p class="book-intro">Timeless patterns to solve common design challenges and improve software architecture.</p>
+                <button class="add-to-cart">Add to Cart</button>
+              </article>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <article class="book-item">
+                <img src="images/pragmatic-programmer.jpg" alt="The Pragmatic Programmer" />
+                <h3>The Pragmatic Programmer</h3>
+                <p>by Andrew Hunt & David Thomas</p>
+                <p class="book-intro">Practical advice and techniques to become a better programmer and professional.</p>
+                <button class="add-to-cart">Add to Cart</button>
+              </article>
+            </div>
+            <!-- Additional slides can be added here -->
+          </div>
+          <!-- Swiper Navigation Buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section id="category" class="section category">
+      <div class="container">
+        <h2>Categories</h2>
+        <div class="category-grid">
+          <a href="#" class="category-item">Software Engineering</a>
+          <a href="#" class="category-item">Computer Science</a>
+          <a href="#" class="category-item">Web Development</a>
+          <a href="#" class="category-item">Data Science</a>
+          <a href="#" class="category-item">DevOps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews">
+      <div class="container">
+        <h2>Customer Reviews</h2>
+        <div class="review-grid">
+          <article class="review-item">
+            <p>"A stellar collection of must-read tech books. The selection is on point!" - Alex</p>
+          </article>
+          <article class="review-item">
+            <p>"Great resource for developers. Found everything from design patterns to cloud computing." - Jamie</p>
+          </article>
+          <!-- Additional review items can be added -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section feedback">
+      <div class="container">
+        <h2>Feedback</h2>
+        <form class="feedback-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Feedback" required></textarea>
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#category">Category</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+      <p>&copy; 2025 TechBookStore. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS for slider functionality -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
